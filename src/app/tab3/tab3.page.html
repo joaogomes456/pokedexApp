@@ -1,5 +1,5 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="dark">
     <ion-title>
       Sobre
     </ion-title>
@@ -8,12 +8,12 @@
 
 <ion-content [fullscreen]="true">
   <ion-item lines="full">
-    <ion-avatar slot="start">
-      <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+    <ion-avatar slot="end">
+      <img src="assets/desenvolvedor.jpg">
     </ion-avatar>
     <ion-label class="ion-text-wrap">
       <div>
-        <h2>João Vitor Gomes Pontes</h2>
+        <h3>João Vitor Gomes Pontes</h3>
         <p>Aluno da Etec Cidade do Livro</p>
         <p>Lençóis Paulista</p>
         <p>(14) 9 9188-1413</p>
@@ -23,7 +23,21 @@
       </div>
     </ion-label>
   </ion-item >
-  <ion-item>
-   <ion-label>Versão 0.1</ion-label>
+<div class="ion-text-center">
+  <img src="https://assets.pokemon.com/static2/br/img/icons/tcgo_logo.png">
+</div>
+  <ion-item lines="full">
+   <ion-label>Versão</ion-label>
+   <ion-badge slot="end" color="tertiary">0.1</ion-badge>
   </ion-item>
+
+  <ion-item lines="full">
+    <ion-label>Ano</ion-label>
+    <ion-badge slot="end" color="danger">2021</ion-badge>
+   </ion-item>
+
+   <ion-item lines="full">
+    <ion-label>Turma</ion-label>
+    <ion-badge slot="end" color="success">A</ion-badge>
+   </ion-item>
 </ion-content>
