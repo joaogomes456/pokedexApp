@@ -36,18 +36,20 @@ export class Tab1Page {
 
   async presentToast1() {
     const toast = await this.toastController.create({
+      cssClass:'ion-text-center',
       message: 'Pokemon Favoritado',
       duration: 2000.,
-      color:'secondary'
+      color:'success tint'
     });
     toast.present();
   }
 
   async presentToast2() {
     const toast = await this.toastController.create({
+      cssClass:'ion-text-center',
       message: 'Pokemon Não Favoritado',
       duration: 2000.,
-      color:'secondary'
+      color:'danger tint'
     });
     toast.present();
   }
